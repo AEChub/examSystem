@@ -11,14 +11,14 @@
 
 /* VARIABLES */
 :root {
-    --main-color: #3F1651;
+    --main-color: #CDCDCD;
     --primary-color: #A0D1D5;
-    --secondary-color: #F89F5B;
-    --third-color: #FB8500;
+    --secondary-color: #D5D2CA;
+    --third-color: #DFDFDF;
     --fourth-color: #653780;
     --fifth-color: #9C3587;
     --sixth-color: #E53F71; 
-    --black: #13131a; 
+    --black: #181a13; 
     --bg: #FFFFFF; 
     --border: 1px solid rgba(0, 0, 0, 0.3);
     --box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
@@ -45,8 +45,9 @@ a {
     transition: var(--transition);
 }
 
+
 a:hover {
-    color: var(--secondary-color);
+    color: var(--bg);
 }
 
 img {
@@ -99,14 +100,13 @@ nav {
 }
 
 .navbar .logo-img {
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 40px;
 }
 
 .navbar-toggler {
     color: var(--main-color);
 }
-
 
 /* BTN */
 .btn {
@@ -134,15 +134,26 @@ nav {
 
 /* HERO */
 #hero {
-    background-image: url('../images/hero-img.png');
+    background-image: url('/assets/images/hero-img.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-position: center;
     background-size: cover;
+    height: 100vh;
+}
+
+#hero .container {
+    /* From https://css.glass */
+
 }
 
 #hero .container .heading-container {
-    max-width: 500px;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.21);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(5.8px);
 }
 
 /* SECTION TITLE */
@@ -187,79 +198,25 @@ span {
     font-size: 40px;
 }
 
-/* TEAM */
-.team-member-content {
-    background-color: var(--fourth-color);
-    position: absolute;
-    bottom: -24px;
-    left: 50%;
-    width: calc(100% - 50px);
-    transform: translateX(-50%);
-    padding: 24px;
-    transition: var(--transition);
-    opacity: 0;
-}
-
-.team-member:hover .team-member-content {
-    opacity: 1;
-    bottom: 24px;
-}
-
-/* CONTACT */
-#contact {
-    background-image: url('../images/contact-bg.png');
-}
-
-#contact .form-control {
-    border-radius: 0;
-}
-
-#contact .form-control:focus {
-    box-shadow: var(--box-shadow);
-}
-
-#contact .email {
-    border-radius: 100px;
-    height: 60px;
-    padding-left: 20px;
-    font-family: 'Inter', sans-serif;
-}
-
-#contact .message {
-    border-radius: 25px;
-    padding-top: 20px;
-    padding-left: 20px;
-    font-family: 'Inter', sans-serif;
-}
-
-#contact .contact-btn {
-    width: 300px;
-    height: 60px;
-}
-
-form {
-    background-color: var(--main-color);
-}
-
 /* FOOTER */
 footer {
-    padding-top: 120px;
+    padding-top: 20px;
 }
 
 .footer-top {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .footer-bottom {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: 'Inter', sans-serif;
 }
 
 .footer-top .logo-img {
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 40px;
 }
 
 .footer-top .logo-title {
@@ -268,7 +225,7 @@ footer {
 
 .footer-top .contact-info {
     font-family: 'Inter', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .footer-bottom .go-to {
