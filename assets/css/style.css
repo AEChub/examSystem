@@ -45,7 +45,6 @@ a {
     transition: var(--transition);
 }
 
-
 a:hover {
     color: var(--bg);
 }
@@ -134,7 +133,7 @@ nav {
 
 /* HERO */
 #hero {
-    background-image: url('/assets/images/hero-img.jpg');
+    background-image: url("/assets/images/hero-img.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-position: center;
@@ -142,18 +141,8 @@ nav {
     height: 100vh;
 }
 
-#hero .container {
-    /* From https://css.glass */
-
-}
-
 #hero .container .heading-container {
     max-width: 600px;
-    background: rgba(255, 255, 255, 0.21);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6.8px);
-    -webkit-backdrop-filter: blur(5.8px);
 }
 
 /* SECTION TITLE */
@@ -260,6 +249,7 @@ footer .line {
     justify-content: center;
     background-color: rgba(255,255,255,0.1);
     border-radius: 100px;
+    margin-top: 20px;
 }
 
 .social-icons a:hover {
