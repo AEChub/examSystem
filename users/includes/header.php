@@ -10,12 +10,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>EvaluTest | Online Examination System</title>
+    <title>Система тестирования АЭК</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
 
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
     <link href="./main.css" rel="stylesheet">
-    <link href="css/sweetalert.css" rel="stylesheet">
+    <link href="./css/sweetalert.css" rel="stylesheet">
 </head>
 <body id="body">
     <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
@@ -67,7 +67,7 @@
                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                         </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                            <a href="query/logoutExe.php" class="dropdown-item">Logout</a>
+                                            <a href="query/logoutExe.php" class="dropdown-item">Выйти</a>
                                         </div>
                                     </div>
                                 </div>

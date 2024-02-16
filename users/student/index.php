@@ -4,7 +4,7 @@
     session_start();
 
     if (!isset($_SESSION['student_name'])) {
-        $_SESSION['msg'] = "You must log in first";
+        $_SESSION['msg'] = "Сначала вы должны войти в систему";
         header('location: ../../login.php');
     }
 ?>
@@ -17,7 +17,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> HELLO <?php echo $_SESSION['student_name']; ?>!</h1>
-    <a href="logout.php" class="text-decoration-none">Logout</a>
+    <h1> Привет <?php echo $_SESSION['student_name']; ?>!</h1>
+    <a href="logout.php" class="text-decoration-none">Выйти</a>
 </body>
 </html>

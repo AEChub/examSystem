@@ -23,13 +23,13 @@
             </div>
         </div>  
         <div class="row col-md-12">
-        	<h1 class="text-primary">RESULTS</h1>
+        	<h1 class="text-primary">РЕЗУЛЬТАТ</h1>
         </div>
 
         <div class="row col-md-6 float-left">
         	<div class="main-card mb-3 card">
                 <div class="card-body">
-                	<h5 class="card-title">Your Answers</h5>
+                	<h5 class="card-title">Ваши ответы</h5>
         			<table class="align-middle mb-0 table table-borderless table-striped table-hover" id="tableList">
                     <?php 
                     	$selQuest = $conn->query("SELECT * FROM exam_question_tbl eqt INNER JOIN exam_answers ea ON eqt.question_id = ea.question_id WHERE eqt.exam_id='$examId' AND ea.student_id='$exmneId' AND ea.answer_status='new' ");
@@ -39,7 +39,7 @@
                     			<td>
                     				<b><p><?php echo $i++; ?> .) <?php echo $selQuestRow['exam_question']; ?></p></b>
                     				<label class="pl-4 text-success">
-                    					Answer : 
+                    					Ответ : 
                     					<?php 
                     						if($selQuestRow['exam_answer'] != $selQuestRow['exam_answer'])
                     						{ ?>
@@ -65,7 +65,7 @@
         	<div class="card mb-3 widget-content bg-night-fade">
                 <div class="widget-content-wrapper text-white">
                     <div class="widget-content-left">
-                        <div class="widget-heading"><h5>Score</h5></div>
+                        <div class="widget-heading"><h5>Баллы</h5></div>
                         <div class="widget-subheading" style="color: transparent;">/</div>
                     </div>
                     <div class="widget-content-right">
@@ -89,7 +89,7 @@
             <div class="card mb-3 widget-content bg-happy-green">
                 <div class="widget-content-wrapper text-white">
                     <div class="widget-content-left">
-                        <div class="widget-heading"><h5>Percentage</h5></div>
+                        <div class="widget-heading"><h5>В процентах</h5></div>
                         <div class="widget-subheading" style="color: transparent;">/</div>
                         </div>
                         <div class="widget-content-right">
