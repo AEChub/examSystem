@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>EvaluTest | Login</title>
+	<title>ATS | Войти</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -22,30 +22,30 @@
 			<div class="wrap-login100">
 				<div class="login100-form-title" style="background-image: url(login-ui/images/bg-01.jpg);">
 					<span class="login100-form-title-1">
-						STUDENT LOGIN
+						Войти как студент
 					</span>
 				</div>
 
 				<form method="post" id="examineeLoginFrm" class="login100-form validate-form">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-						<span class="label-input100">Email</span>
-						<input class="input100" type="text" name="username" placeholder="Enter email">
+						<span class="label-input100">Логин</span>
+						<input class="input100" type="text" name="username" placeholder="Введите логин">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
-						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="pass" placeholder="Enter password">
+						<span class="label-input100">Пароль</span>
+						<input class="input100" type="password" name="pass" placeholder="Введите пароль">
 						<span class="focus-input100"></span>
 					</div>
 
 
 					<div class="container-login100-form-btn" align="right">
 						<button type="submit" class="login100-form-btn">
-							Login 
+							Войти 
 						</button>&nbsp;&nbsp;
 						<a href="../index.html" class="login100-form-btn">
-							Back to Home
+							Назад
 						</a>
 					</div>
 				</form>

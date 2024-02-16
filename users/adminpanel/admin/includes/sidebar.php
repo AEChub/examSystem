@@ -31,25 +31,25 @@
                     </div>    <div class="scrollbar-sidebar">
                         <div class="app-sidebar__inner">
                             <ul class="vertical-nav-menu">
-                                <li class="app-sidebar__heading"><i class="metismenu-icon pe-7s-monitor"></i><a href="home.php">Dashboard</a></li>
+                                <li class="app-sidebar__heading"><i class="metismenu-icon pe-7s-monitor"></i><a href="home.php">Панель</a></li>
 
                                 <li>
                                     <a href="#">
                                          <i class="metismenu-icon pe-7s-display2"></i>
-                                         Manage Course
+                                         Управление группами
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <ul>
                                         <li>
                                             <a href="#" data-toggle="modal" data-target="#modalForAddCourse">
                                                 <i class="metismenu-icon"></i>
-                                                Add Courses
+                                                Добавить группу
                                             </a>
                                         </li>
                                         <li>
                                             <a href="home.php?page=manage-course">
                                                 <i class="metismenu-icon">
-                                                </i>Manage Course
+                                                </i>Управлять группами
                                             </a>
                                         </li>
                                        
@@ -59,20 +59,20 @@
                                 <li>
                                     <a href="#">
                                          <i class="metismenu-icon pe-7s-news-paper"></i>
-                                         Manage Exams
+                                         Управление экзаменом
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <ul>
                                         <li>
                                             <a href="#" data-toggle="modal" data-target="#modalForExam">
                                                 <i class="metismenu-icon"></i>
-                                                Add Exam
+                                                Добавить экзамен
                                             </a>
                                         </li>
                                         <li>
                                             <a href="home.php?page=manage-exam">
                                                 <i class="metismenu-icon">
-                                                </i>Manage Exam
+                                                </i>Управлять экзаменом
                                             </a>
                                         </li>
                                        
@@ -82,41 +82,41 @@
                                 <li>
                                     <a href="home.php?page=ranking-exam">
                                         <i class="metismenu-icon pe-7s-cup">
-                                        </i>Ranking (By Exam)
+                                        </i>Результаты по группам
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="home.php?page=feedbacks">
                                         <i class="metismenu-icon pe-7s-chat">
-                                        </i>All Feedbacks
+                                        </i>Обратная связь
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="home.php?page=examinee-result">
                                         <i class="metismenu-icon pe-7s-medal">
-                                        </i>Results (By Examinee)
+                                        </i>Результаты (всех)
                                     </a>
                                 </li>
 
                                 <li>
                                     <a href="#">
                                          <i class="metismenu-icon pe-7s-users"></i>
-                                         Manage Students
+                                         Управление студентами
                                         <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
                                     </a>
                                     <ul>
                                         <li>
                                             <a href="" data-toggle="modal" data-target="#modalForAddExaminee">
                                                 <i class="metismenu-icon"></i>
-                                                Add Student
+                                                Добавить студента
                                             </a>
                                         </li>
                                         <li>
                                             <a href="home.php?page=manage-examinee">
                                                 <i class="metismenu-icon">
-                                                </i>Manage Students
+                                                </i>Управлять студентами
                                             </a>
                                         </li>
                                     </ul>

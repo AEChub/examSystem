@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Admin Dashboard</title>
+    <title>Панель администратора</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
      
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -62,11 +62,11 @@
                                 <div class="widget-content-left">
                                     <div class="btn-group">
                                         <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                            Admin
+                                            Админ
                                             <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                         </a>
                                         <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                            <a href="query/logoutExe.php" class="dropdown-item">Logout</a>
+                                            <a href="query/logoutExe.php" class="dropdown-item">Выйти</a>
                                         </div>
                                     </div>
                                 </div>

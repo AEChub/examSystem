@@ -10,7 +10,7 @@
                             <i class="pe-7s-news-paper icon-gradient bg-mean-fruit">
                             </i>
                         </div>
-                        <div>Dashboard</div>
+                        <div>Главная страница</div>
                     </div>  
                  </div>
             </div>            
@@ -19,7 +19,7 @@
                     <div class="card mb-3 widget-content bg-midnight-bloom">
                         <div class="widget-content-wrapper text-white">
                             <div class="widget-content-left">
-                                <div class="widget-heading">Total Course</div>
+                                <div class="widget-heading">Количество групп</div>
                                 <div class="widget-subheading" style="color:transparent;">.</div>
                             </div>
                             <div class="widget-content-right">
@@ -34,7 +34,7 @@
                     <div class="card mb-3 widget-content bg-arielle-smile">
                         <div class="widget-content-wrapper text-white">
                             <div class="widget-content-left">
-                                <div class="widget-heading">Total Exam</div>
+                                <div class="widget-heading">Количество экзаменов</div>
                                 <div class="widget-subheading" style="color:transparent;">.</div>
                             </div>
                             <div class="widget-content-right">

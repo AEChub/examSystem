@@ -8,16 +8,16 @@
  ?>
 
 <fieldset style="width:543px;" >
-	<legend><i class="facebox-header"><i class="edit large icon"></i>&nbsp;Update Course Name ( <?php echo strtoupper($selCourse['course_name']); ?> )</i></legend>
+	<legend><i class="facebox-header"><i class="edit large icon"></i>&nbsp;Изменить название группы ( <?php echo strtoupper($selCourse['course_name']); ?> )</i></legend>
   <div class="col-md-12 mt-4">
 <form method="post" id="updateCourseFrm">
      <div class="form-group">
-      <legend>Course Name</legend>
+      <legend>Название группы</legend>
     <input type="hidden" name="course_id" value="<?php echo $id; ?>">
     <input type="" name="newCourseName" class="form-control" required="" value="<?php echo $selCourse['course_name']; ?>" >
   </div>
   <div class="form-group" align="right">
-    <button type="submit" class="btn btn-sm btn-primary">Update Now</button>
+    <button type="submit" class="btn btn-sm btn-primary">Обновить</button>
   </div>
 </form>
   </div>

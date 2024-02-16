@@ -33,9 +33,9 @@ if(!isset($_SESSION['admin']['adminlogin']) == true) header("location:index.php"
             <div class="app-page-title">
                 <div class="page-title-wrapper">
                      <div class="page-title-heading">
-                        <div> MANAGE EXAM
+                        <div> УПРАВЛЕНИЕ ЭКЗАМЕНОМ
                             <div class="page-title-subheading">
-                              Add Question for <?php echo $selExamRow['exam_title']; ?>
+                              Добавить вопросы для <b><?php echo $selExamRow['exam_title']; ?></b>
                             </div>
                         </div>
                     </div>
@@ -48,12 +48,12 @@ if(!isset($_SESSION['admin']['adminlogin']) == true) header("location:index.php"
                     <div class="col-md-6">
                       <div class="main-card mb-3 card">
                         <div class="card-header">
-                          <i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Exam Information
+                          <i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Информация об экзамене
                         </div>
                         <div class="card-body">
                           <form method="post" id="updateExamFrm">
                             <div class="form-group">
-                              <label>Course</label>
+                              <label>Группа</label>
                               <select class="form-control" name="courseId" required="">
                                 <option value="<?php echo $selExamRow['course_id']; ?>"><?php echo $selCourse['courseName']; ?></option>
                                 <?php 
@@ -66,36 +66,36 @@ if(!isset($_SESSION['admin']['adminlogin']) == true) header("location:index.php"
                             </div>
 
                             <div class="form-group">
-                              <label>Exam Title</label>
+                              <label>Название экзамена</label>
                               <input type="hidden" name="examId" value="<?php echo $selExamRow['exam_id']; ?>">
                               <input type="" name="examTitle" class="form-control" required="" value="<?php echo $selExamRow['exam_title']; ?>">
                             </div>  
 
                             <div class="form-group">
-                              <label>Exam Description</label>
+                              <label>Описание</label>
                               <input type="" name="examDesc" class="form-control" required="" value="<?php echo $selExamRow['exam_description']; ?>">
                             </div>  
 
                             <div class="form-group">
-                              <label>Exam Time limit</label>
+                              <label>Временое ограничение</label>
                               <select class="form-control" name="examLimit" required="">
                                 <option value="<?php echo $selExamRow['exam_time_limit']; ?>"><?php echo $selExamRow['exam_time_limit']; ?> Minutes</option>
-                                <option value="10">10 Minutes</option> 
-                                <option value="20">20 Minutes</option> 
-                                <option value="30">30 Minutes</option> 
-                                <option value="40">40 Minutes</option> 
-                                <option value="50">50 Minutes</option> 
-                                <option value="60">60 Minutes</option> 
+                                <option value="10">10 Минут</option> 
+                                <option value="20">20 Минут</option> 
+                                <option value="30">30 Минут</option> 
+                                <option value="40">40 Минут</option> 
+                                <option value="50">50 Минут</option> 
+                                <option value="60">60 Минут</option> 
                               </select>
                             </div>
 
                             <div class="form-group">
-                              <label>No. of Question/s</label>
+                              <label>Количество вопросов</label>
                               <input type="number" name="examQuestDipLimit" class="form-control" value="<?php echo $selExamRow['exam_questionlimit_display']; ?>"> 
                             </div>
 
                             <div class="form-group" align="right">
-                              <button type="submit" class="btn btn-primary btn-lg">Update</button>
+                              <button type="submit" class="btn btn-primary btn-lg">Обновить</button>
                             </div> 
                           </form>                           
                         </div>
@@ -106,12 +106,12 @@ if(!isset($_SESSION['admin']['adminlogin']) == true) header("location:index.php"
                         $selQuest = $conn->query("SELECT * FROM exam_question_tbl WHERE exam_id='$exId' ORDER BY question_id desc");
                       ?>
                       <div class="main-card mb-3 card">
-                        <div class="card-header"><i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Exam Question's 
+                        <div class="card-header"><i class="header-icon lnr-license icon-gradient bg-plum-plate"> </i>Вопросы экзамена 
                           <span class="badge badge-pill badge-primary ml-2">
                             <?php echo $selQuest->rowCount(); ?>
                           </span>
                           <div class="btn-actions-pane-right">
-                            <button class="btn btn-sm btn-primary " data-toggle="modal" data-target="#modalForAddQuestion">Add Question</button>
+                            <button class="btn btn-sm btn-primary " data-toggle="modal" data-target="#modalForAddQuestion">Добавить вопрос</button>
                           </div>
                         </div>
                         <div class="card-body" >
@@ -124,8 +124,8 @@ if(!isset($_SESSION['admin']['adminlogin']) == true) header("location:index.php"
                                     <table class="align-middle mb-0 table table-borderless table-striped table-hover" id="tableList">
                                       <thead>
                                         <tr>
-                                          <th class="text-left pl-1">Course Name</th>
-                                          <th class="text-center" width="20%">Action</th>
+                                          <th class="text-left pl-1">Вопросы</th>
+                                          <th class="text-center" width="20%">Действие</th>
                                         </tr>
                                       </thead>
                                       <tbody>
@@ -181,8 +181,8 @@ if(!isset($_SESSION['admin']['adminlogin']) == true) header("location:index.php"
                                                     ?>
                                                 </td>
                                                 <td class="text-center">
-                                                <a rel="facebox" href="facebox_modal/updateQuestion.php?id=<?php echo $selQuestionRow['question_id']; ?>" class="btn btn-sm btn-primary">Update</a>
-                                                <button type="button" id="deleteQuestion" data-id='<?php echo $selQuestionRow['question_id']; ?>' class="btn btn-danger btn-sm">Delete</button>
+                                                <a rel="facebox" href="facebox_modal/updateQuestion.php?id=<?php echo $selQuestionRow['question_id']; ?>" class="btn btn-sm btn-primary">Изменить</a>
+                                                <button type="button" id="deleteQuestion" data-id='<?php echo $selQuestionRow['question_id']; ?>' class="btn btn-danger btn-sm">Удалить</button>
                                                 </td>
                                               </tr>
                                             <?php }
@@ -191,7 +191,7 @@ if(!isset($_SESSION['admin']['adminlogin']) == true) header("location:index.php"
                                           { ?>
                                               <tr>
                                                 <td colspan="2">
-                                                  <h3 class="p-3">No Exams Found</h3>
+                                                  <h3 class="p-3">Не найдено ни одного экзамена</h3>
                                                 </td>
                                               </tr>
                                           <?php }
@@ -202,7 +202,7 @@ if(!isset($_SESSION['admin']['adminlogin']) == true) header("location:index.php"
                                 <?php }
                                   else
                                   { ?>
-                                      <h4 class="text-primary">No questions found...</h4>
+                                      <h4 class="text-primary">Не найдено ни одного вопроса...</h4>
                                     <?php
                                   }
                                 ?>

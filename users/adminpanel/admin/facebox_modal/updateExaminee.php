@@ -8,31 +8,31 @@
  ?>
 
 <fieldset style="width:543px;" >
-	<legend><i class="facebox-header"><i class="edit large icon"></i>&nbsp;Update <b>( <?php echo strtoupper($selExmne['student_fullname']); ?> )</b></i></legend>
+	<legend><i class="facebox-header"><i class="edit large icon"></i>&nbsp;Изменить <b>( <?php echo strtoupper($selExmne['student_fullname']); ?> )</b></i></legend>
   <div class="col-md-12 mt-4">
 <form method="post" id="updateExamineeFrm">
      <div class="form-group">
-        <legend>Fullname</legend>
+        <legend>ФИО</legend>
         <input type="hidden" name="exmne_id" value="<?php echo $id; ?>">
         <input type="" name="exFullname" class="form-control" required="" value="<?php echo $selExmne['student_fullname']; ?>" >
      </div>
 
      <div class="form-group">
-        <legend>Gender</legend>
+        <legend>Пол</legend>
         <select class="form-control" name="exGender">
           <option value="<?php echo $selExmne['student_sex']; ?>"><?php echo $selExmne['student_sex']; ?></option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
+          <option value="male">Мужской</option>
+          <option value="female">Женский</option>
         </select>
      </div>
 
      <div class="form-group">
-        <legend>Birthdate</legend>
+        <legend>Дата рождения</legend>
         <input type="date" name="exBdate" class="form-control" required="" value="<?php echo date('Y-m-d',strtotime($selExmne["student_birthdate"])) ?>"/>
      </div>
 
      <div class="form-group">
-        <legend>Course</legend>
+        <legend>Группа</legend>
         <?php 
             $exmneCourse = $selExmne['student_course'];
             $selCourse = $conn->query("SELECT * FROM course_tbl WHERE course_id='$exmneCourse' ")->fetch(PDO::FETCH_ASSOC);
@@ -49,27 +49,27 @@
      </div>
 
      <div class="form-group">
-        <legend>Year level</legend>
+        <legend>Курс </legend>
         <input type="" name="exYrlvl" class="form-control" required="" value="<?php echo $selExmne['student_year_level']; ?>" >
      </div>
 
      <div class="form-group">
-        <legend>Email</legend>
+        <legend>Логин</legend>
         <input type="" name="exEmail" class="form-control" required="" value="<?php echo $selExmne['student_email']; ?>" >
      </div>
 
      <div class="form-group">
-        <legend>Password</legend>
+        <legend>Пароль</legend>
         <input type="" name="exPass" class="form-control" required="" value="<?php echo $selExmne['student_password']; ?>" >
      </div>
 
      <div class="form-group">
-        <legend>Status</legend>
+        <legend>Статус</legend>
         <input type="hidden" name="course_id" value="<?php echo $id; ?>">
         <input type="" name="newCourseName" class="form-control" required="" value="<?php echo $selExmne['student_status']; ?>" >
      </div>
   <div class="form-group" align="right">
-    <button type="submit" class="btn btn-sm btn-primary">Update Now</button>
+    <button type="submit" class="btn btn-sm btn-primary">Обновить</button>
   </div>
 </form>
   </div>

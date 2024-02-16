@@ -21,13 +21,13 @@
                    <div class="app-page-title">
                     <div class="page-title-wrapper">
                         <div class="page-title-heading">
-                            <div><b class="text-primary">RANKING BY EXAM</b><br>
-                                Exam Name : <?php echo $selEx['exam_title']; ?><br><br>
-                               <span class="border" style="padding:10px;color:black;background-color: yellow;">Excellence</span>
-                               <span class="border" style="padding:10px;color:white;background-color: green;">Very Good</span>
-                               <span class="border" style="padding:10px;color:white;background-color: blue;">Good</span>
-                               <span class="border" style="padding:10px;color:white;background-color: red;">Failed</span>
-                               <span class="border" style="padding:10px;color:black;background-color: #E9ECEE;">Not Answering</span>
+                            <div><b class="text-primary">РЕЙТИНГ ПО РЕЗУЛЬТАТАМ ЭКЗАМЕНА</b><br>
+                                Название экзамена : <?php echo $selEx['exam_title']; ?><br><br>
+                                <span class="border" style="padding:10px;color:white;background-color: green;">Очень хорошо</span>
+                                <span class="border" style="padding:10px;color:white;background-color: blue;">Хорошо</span>
+                                <span class="border" style="padding:10px;color:black;background-color: yellow;">Удовлетворительно</span>
+                                <span class="border" style="padding:10px;color:white;background-color: red;">Провалено</span>
+                                <span class="border" style="padding:10px;color:black;background-color: #E9ECEE;">Пока нет ответа</span>
                             </div>
                         </div>
                     </div>
@@ -37,9 +37,9 @@
                           <tbody>
                             <thead>
                                 <tr>
-                                    <th width="25%">Examinee Fullname</th>
-                                    <th>Score / Over</th>
-                                    <th>Percentage</th>
+                                    <th width="25%">ФИО </th>
+                                    <th>Ответы</th>
+                                    <th>В процентах</th>
                                 </tr>
                             </thead>
                             <?php 
@@ -88,7 +88,7 @@
                                         <?php 
                                           if($selAttempt->rowCount() == 0)
                                           {
-                                            echo "Not answer yet";
+                                            echo "Пока нет ответа";
                                           }
                                           else if($selScore->rowCount() > 0)
                                           {
@@ -112,7 +112,7 @@
                                           <?php 
                                                 if($selAttempt->rowCount() == 0)
                                                 {
-                                                  echo "Not answer yet";
+                                                  echo "Пока нет данных";
                                                 }
                                                 else
                                                 {
@@ -137,23 +137,23 @@
                 <div class="app-page-title">
                 <div class="page-title-wrapper">
                     <div class="page-title-heading">
-                        <div><b>RANKING BY EXAM</b></div>
+                        <div><b>РЕЙТИНГ ПО РЕЗУЛЬТАТАМ ЭКЗАМЕНОВ (ПО ГРУППАМ)</b></div>
                     </div>
                 </div>
                 </div> 
 
                  <div class="col-md-12">
                 <div class="main-card mb-3 card">
-                    <div class="card-header">ExAM List
+                    <div class="card-header">Список экзаменов
                     </div>
                     <div class="table-responsive">
                         <table class="align-middle mb-0 table table-borderless table-striped table-hover" id="tableList">
                             <thead>
                             <tr>
-                                <th class="text-left pl-4">Exam Title</th>
-                                <th class="text-left ">Course</th>
-                                <th class="text-left ">Description</th>
-                                <th class="text-center" width="8%">Action</th>
+                                <th class="text-left pl-4">Название экзамена </th>
+                                <th class="text-left ">Группа</th>
+                                <th class="text-left ">Описание</th>
+                                <th class="text-center" width="8%">Действие</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -175,7 +175,7 @@
                                             </td>
                                             <td><?php echo $selExamRow['exam_description']; ?></td>
                                             <td class="text-center">
-                                             <a href="?page=ranking-exam&exam_id=<?php echo $selExamRow['exam_id']; ?>"  class="btn btn-success btn-sm">View</a>
+                                             <a href="?page=ranking-exam&exam_id=<?php echo $selExamRow['exam_id']; ?>"  class="btn btn-success btn-sm">Просмотр</a>
                                             </td>
                                         </tr>
 
@@ -185,7 +185,7 @@
                                 { ?>
                                     <tr>
                                       <td colspan="5">
-                                        <h3 class="p-3">No Exams Found</h3>
+                                        <h3 class="p-3">Не найдено ни одного экзамена</h3>
                                       </td>
                                     </tr>
                                 <?php }

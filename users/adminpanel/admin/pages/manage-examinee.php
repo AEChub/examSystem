@@ -4,27 +4,27 @@
             <div class="app-page-title">
                 <div class="page-title-wrapper">
                     <div class="page-title-heading">
-                        <div>MANAGE EXAMINEE</div>
+                        <div>Управление студентами</div>
                     </div>
                 </div>
             </div>        
             
             <div class="col-md-12">
                 <div class="main-card mb-3 card">
-                    <div class="card-header">Examinee List
+                    <div class="card-header">Список студентов
                     </div>
                     <div class="table-responsive">
                         <table class="align-middle mb-0 table table-borderless table-striped table-hover" id="tableList">
                             <thead>
                             <tr>
-                                <th>Fullname</th>
-                                <th>Sex</th>
-                                <th>Birthdate</th>
-                                <th>Course</th>
-                                <th>Year level</th>
-                                <th>Email</th>
-                                <th>Password</th>
-                                <th>status</th>
+                                <th>ФИО</th>
+                                <th>Пол</th>
+                                <th>Дата рождения</th>
+                                <th>Группа</th>
+                                <th>Год обучения</th>
+                                <th>Логин</th>
+                                <th>Пароль</th>
+                                <th>Статус</th>
                                 <th></th>
                             </tr>
                             </thead>
@@ -50,7 +50,7 @@
                                            <td><?php echo $selExmneRow['student_password']; ?></td>
                                            <td><?php echo $selExmneRow['student_status']; ?></td>
                                            <td>
-                                               <a rel="facebox" href="facebox_modal/updateExaminee.php?id=<?php echo $selExmneRow['student_id']; ?>" class="btn btn-sm btn-primary">Update</a>
+                                               <a rel="facebox" href="facebox_modal/updateExaminee.php?id=<?php echo $selExmneRow['student_id']; ?>" class="btn btn-sm btn-primary">Изменить</a>
 
                                            </td>
                                         </tr>
@@ -60,7 +60,7 @@
                                 { ?>
                                     <tr>
                                       <td colspan="2">
-                                        <h3 class="p-3">No Students Found</h3>
+                                        <h3 class="p-3">Студенты найдены</h3>
                                       </td>
                                     </tr>
                                 <?php }

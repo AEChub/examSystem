@@ -4,23 +4,23 @@
             <div class="app-page-title">
                 <div class="page-title-wrapper">
                     <div class="page-title-heading">
-                        <div>EXAMINEE RESULT</div>
+                        <div>Результаты всех экзаменуемых студентов колледжа</div>
                     </div>
                 </div>
             </div>        
             
             <div class="col-md-12">
                 <div class="main-card mb-3 card">
-                    <div class="card-header">Examinee Result
+                    <div class="card-header">Список студентов
                     </div>
                     <div class="table-responsive">
                         <table class="align-middle mb-0 table table-borderless table-striped table-hover" id="tableList">
                             <thead>
                             <tr>
-                                <th>Student Name</th>
-                                <th>Exam Name</th>
-                                <th>Score</th>
-                                <th>Ratings</th>
+                                <th>Имя студента</th>
+                                <th>Название экзамена</th>
+                                <th>Ответы</th>
+                                <th>Рейтинг</th>
                                 <!-- <th width="10%"></th> -->
                             </tr>
                             </thead>
@@ -77,7 +77,7 @@
                                 { ?>
                                     <tr>
                                       <td colspan="2">
-                                        <h3 class="p-3">No Students Taken an Exam</h3>
+                                        <h3 class="p-3">Нет студентов, сдававших экзамен</h3>
                                       </td>
                                     </tr>
                                 <?php }
