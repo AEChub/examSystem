@@ -5,7 +5,7 @@
             <div class="theme-settings__inner">
                 <div class="scrollbar-container">
                     <div class="theme-settings__options-wrapper">
-                        <h3 class="themeoptions-heading">Layout Options
+                        <h3 class="themeoptions-heading">Настройки страницы
                         </h3>
                         <div class="p-3">
                             <ul class="list-group">
@@ -20,9 +20,9 @@
                                                 </div>
                                             </div>
                                             <div class="widget-content-left">
-                                                <div class="widget-heading">Fixed Header
+                                                <div class="widget-heading">Фиксированный заголовок
                                                 </div>
-                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                <div class="widget-subheading">Делает верхнюю часть заголовка фиксированной, всегда видимой!
                                                 </div>
                                             </div>
                                         </div>
@@ -39,9 +39,9 @@
                                                 </div>
                                             </div>
                                             <div class="widget-content-left">
-                                                <div class="widget-heading">Fixed Sidebar
+                                                <div class="widget-heading">Фиксированная боковая панель
                                                 </div>
-                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                <div class="widget-subheading">Сделайте левую боковую панель фиксированной, всегда видимой!
                                                 </div>
                                             </div>
                                         </div>
@@ -58,9 +58,9 @@
                                                 </div>
                                             </div>
                                             <div class="widget-content-left">
-                                                <div class="widget-heading">Fixed Footer
+                                                <div class="widget-heading">Фиксированный нижний колонтитул
                                                 </div>
-                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                <div class="widget-subheading">Сделайте нижний колонтитул приложения фиксированным, всегда видимым!
                                                 </div>
                                             </div>
                                         </div>
@@ -70,16 +70,16 @@
                         </div>
                         <h3 class="themeoptions-heading">
                             <div>
-                                Header Options
+                            Параметры заголовка
                             </div>
                             <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
-                                Restore Default
+                            Восстановить значение по умолчанию
                             </button>
                         </h3>
                         <div class="p-3">
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    <h5 class="pb-2">Choose Color Scheme
+                                    <h5 class="pb-2">Выберите цветовую схему
                                     </h5>
                                     <div class="theme-settings-swatches">
                                         <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
@@ -161,15 +161,15 @@
                             </ul>
                         </div>
                         <h3 class="themeoptions-heading">
-                            <div>Sidebar Options</div>
+                            <div>Параметры боковой панели</div>
                             <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
-                                Restore Default
+                            Восстановить значение по умолчанию
                             </button>
                         </h3>
                         <div class="p-3">
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    <h5 class="pb-2">Choose Color Scheme
+                                    <h5 class="pb-2">Выберите цветовую схему
                                     </h5>
                                     <div class="theme-settings-swatches">
                                         <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
@@ -251,22 +251,22 @@
                             </ul>
                         </div>
                         <h3 class="themeoptions-heading">
-                            <div>Main Content Options</div>
-                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            <div>Параметры основного содержания</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Восстановить значение по умолчанию
                             </button>
                         </h3>
                         <div class="p-3">
                             <ul class="list-group">
                                 <li class="list-group-item">
-                                    <h5 class="pb-2">Page Section Tabs
+                                    <h5 class="pb-2">Вкладки разделов страницы
                                     </h5>
                                     <div class="theme-settings-swatches">
                                         <div role="group" class="mt-2 btn-group">
                                             <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
-                                                Line
+                                            Линия
                                             </button>
                                             <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
-                                                Shadow
+                                            Тень
                                             </button>
                                         </div>
                                     </div>
