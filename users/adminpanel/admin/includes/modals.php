@@ -33,7 +33,7 @@
      <form class="refreshFrm" id="addCourseFrm" method="post" >
        <div class="modal-content myModal-content" >
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Изменить ( <?php echo $selCourseRow['course_name']; ?> )</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Изменить( <?php echo $selCourseRow['course_name']; ?> )</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -175,10 +175,10 @@
             <label>Курс обучения</label>
             <select class="form-control" name="year_level" id="year_level">
               <option value="0">Выберите курс</option>
-              <option value="first year">1 курс</option>
-              <option value="second year">2 курс</option>
-              <option value="third year">3 курс</option>
-              <option value="fourth year">4 курс</option>
+              <option value="1 курс">1 курс</option>
+              <option value="2 курс">2 курс</option>
+              <option value="3 курс">3 курс</option>
+              <option value="4 курс">4 курс</option>
             </select>
           </div>
           <div class="form-group">
